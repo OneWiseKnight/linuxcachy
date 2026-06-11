@@ -111,7 +111,7 @@ unsigned int sysctl_sched_base_slice __read_mostly	= (4 << 20);
  * 0: No yield.
  * 1: Requeue task. (default)
  */
-int sched_yield_type __read_mostly = 1;
+int sched_yield_type __read_mostly = 0;
 
 cpumask_t sched_rq_pending_mask ____cacheline_aligned_in_smp;
 
